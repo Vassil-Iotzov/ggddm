@@ -1,0 +1,4 @@
+Package: ggddm
+Type: Package
+Title: easy way to plot your drift diffusion model results
+Version: 0.0.0.1
