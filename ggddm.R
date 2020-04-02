@@ -2,7 +2,7 @@ ggddm <- function(ggddm) {
 
   require('ggplot2')
   require('extrafont')
-  loadfonts(device = "win")
+  loadfonts(device = "postscript")
   
   if (exists("ggddm_df")){
     label1<-ggddm_df$label1[1]
