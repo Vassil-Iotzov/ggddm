@@ -131,15 +131,15 @@ xy <- data.frame(
   v1 <- v1,
   v2 <- v2,
   
-  z <- ((z1+z2)/2),
-  z1 <- z1,
-  z2 <- z2,
-
-  h2 <- z0,
-
   a <- ifelse(a1>a2,a1,a2),
   a1 <- a1/a,
   a2 <- a2/a,
+  
+  z <- ((z1+z2)/2),
+  z1 <- z1*a1,
+  z2 <- z2*a2,
+
+  h2 <- z0,
   
   a_lab_up <- ifelse(a1>a2,.05,-.05),
   a_lab_down <- ifelse(a1>a2,-.05,.05),
